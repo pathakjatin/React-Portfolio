@@ -16,12 +16,12 @@ const Card = () => {
                 <p className="portfolio__subtitle">A todo list app made using <b>HTML, CSS & Javascript</b> which uses local storage of the browser</p>
                 <div className="portfolio__buttons">
                 <button className="button button--flex">
-                    <a href="https://github.com/pathakjatin/todo-list"> 
+                    <a href="https://github.com/pathakjatin/todo-list" target="_blank" rel="noreferrer"> 
                     GitHub <FaGithub className="portfolio__icon"/>
                     </a>
                 </button>
                 <button className="button button--flex">
-                    <a href="https://pathakjatin.github.io/todo-list/#">
+                    <a href="https://pathakjatin.github.io/todo-list/#" target="_blank" rel="noreferrer">
                     Visit Site <FaArrowRight className="portfolio__icon"/>
                     </a>
                 </button>
@@ -34,12 +34,12 @@ const Card = () => {
                 <p className="portfolio__subtitle">A responsive website that allows users to find a diet for their beloved pets.</p>
                 <div className="portfolio__buttons">
                 <button className="button button--flex">
-                    <a href="https://github.com/pathakjatin/PetConnect"> 
+                    <a href="https://github.com/pathakjatin/PetConnect" target="_blank" rel="noreferrer"> 
                     GitHub <FaGithub className="portfolio__icon"/>
                     </a>
                 </button>
                 <button className="button button--flex">
-                    <a href="https://github.com/pathakjatin/PetConnect">
+                    <a href="https://github.com/pathakjatin/PetConnect" target="_blank" rel="noreferrer">
                     Visit Site <FaArrowRight className="portfolio__icon"/>
                     </a>
                 </button>
@@ -53,12 +53,12 @@ const Card = () => {
                 <p className="portfolio__subtitle">An ad-free spotify clone website featuring my friend's favourite top songs </p>
                 <div className="portfolio__buttons">
                 <button className="button button--flex">
-                    <a href="https://github.com/pathakjatin/spotifyClone"> 
+                    <a href="https://github.com/pathakjatin/spotifyClone" target="_blank" rel="noreferrer"> 
                     GitHub <FaGithub className="portfolio__icon"/>
                     </a>
                 </button>
                 <button className="button button--flex">
-                    <a href="https://github.com/pathakjatin/spotifyClone">
+                    <a href="https://github.com/pathakjatin/spotifyClone" target="_blank" rel="noreferrer">
                     Visit Site <FaArrowRight className="portfolio__icon"/>
                     </a>
                 </button>
@@ -71,12 +71,12 @@ const Card = () => {
                 <p className="portfolio__subtitle">A model which detects sign language and converts it into english letters</p>
                 <div className="portfolio__buttons">
                 <button className="button button--flex">
-                    <a href="https://github.com/pathakjatin/Sign-Language-Recognition-System"> 
+                    <a href="https://github.com/pathakjatin/Sign-Language-Recognition-System" target="_blank" rel="noreferrer"> 
                     GitHub <FaGithub className="portfolio__icon"/>
                     </a>
                 </button>
                 <button className="button button--flex">
-                    <a href="https://github.com/pathakjatin/Sign-Language-Recognition-System">
+                    <a href="https://github.com/pathakjatin/Sign-Language-Recognition-System" target="_blank" rel="noreferrer">
                     Visit Site <FaArrowRight className="portfolio__icon"/>
                     </a>
                 </button>
@@ -89,12 +89,12 @@ const Card = () => {
                 <p className="portfolio__subtitle">A React app that calculates investment made over years</p>
                 <div className="portfolio__buttons">
                 <button className="button button--flex">
-                    <a href="https://github.com/pathakjatin/Investment-Calculator"> 
+                    <a href="https://github.com/pathakjatin/Investment-Calculator" target="_blank" rel="noreferrer"> 
                     GitHub <FaGithub className="portfolio__icon"/>
                     </a>
                 </button>
                 <button className="button button--flex">
-                    <a href="https://github.com/pathakjatin/Investment-Calculator">
+                    <a href="https://github.com/pathakjatin/Investment-Calculator" target="_blank" rel="noreferrer">
                     Visit Site <FaArrowRight className="portfolio__icon"/>
                     </a>
                 </button>
@@ -107,7 +107,7 @@ const Card = () => {
                 <p className="portfolio__subtitle">A MERN stack task management app.</p>
                 <div className="portfolio__buttons">
                 <button className="button button--flex">
-                    <a href="https://github.com/pathakjatin/"> 
+                    <a href="https://github.com/pathakjatin/" target="_blank" rel="noreferrer"> 
                     GitHub <FaGithub className="portfolio__icon"/>
                     </a>
                 </button>

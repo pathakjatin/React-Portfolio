@@ -6,18 +6,18 @@ const Social = () => {
     <div className="home__social">
         <a 
         href="https://www.instagram.com/pathakjatin_/" 
-        target='_blank' className="home__social-icon">
+        target='_blank' rel="noreferrer" className="home__social-icon">
             <FaInstagram />
         </a>
         <a 
         href="https://github.com/pathakjatin" 
-        target='_blank' 
+        target='_blank' rel="noreferrer"
         className="home__social-icon">
             <FaGithub />
         </a>
         <a 
         href="https://leetcode.com/u/pathakjatin/" 
-        target='_blank' 
+        target='_blank' rel="noreferrer"
         className="home__social-icon">
             <FaCode />
         </a>

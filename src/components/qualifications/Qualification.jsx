@@ -1,6 +1,6 @@
 import React from 'react';
 import './qualification.css';
-import {FaGraduationCap , FaBriefcase, FaCalendar} from 'react-icons/fa';
+import {FaGraduationCap , FaCalendar} from 'react-icons/fa';
 
 const Qualification = () => {
     return (
@@ -59,7 +59,7 @@ const Qualification = () => {
 
                         <div className="qualification__data">
                             <div></div>
-                                {/*cschool*/}
+                                {/*school*/}
                             <div>
                                 <span className="qualification__rounder"></span>
                                 <span className="qualification__line"></span>
