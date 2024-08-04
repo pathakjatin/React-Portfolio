@@ -71,12 +71,12 @@ const Card = () => {
                 <p className="portfolio__subtitle">A model which detects sign language and converts it into english letters</p>
                 <div className="portfolio__buttons">
                 <button className="button button--flex">
-                    <a href="https://github.com/pathakjatin/todo-list"> 
+                    <a href="https://github.com/pathakjatin/Sign-Language-Recognition-System"> 
                     GitHub <FaGithub className="portfolio__icon"/>
                     </a>
                 </button>
                 <button className="button button--flex">
-                    <a href="https://pathakjatin.github.io/todo-list/#">
+                    <a href="https://github.com/pathakjatin/Sign-Language-Recognition-System">
                     Visit Site <FaArrowRight className="portfolio__icon"/>
                     </a>
                 </button>
@@ -107,7 +107,7 @@ const Card = () => {
                 <p className="portfolio__subtitle">A MERN stack task management app.</p>
                 <div className="portfolio__buttons">
                 <button className="button button--flex">
-                    <a href="#"> 
+                    <a href="https://github.com/pathakjatin/"> 
                     GitHub <FaGithub className="portfolio__icon"/>
                     </a>
                 </button>
