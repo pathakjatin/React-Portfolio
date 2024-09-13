@@ -62,7 +62,10 @@
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
 }
-
+.portfolio__button{
+    background-color: var(--title-color);
+    color: var(--text-color);
+}
 @media screen and (max-width: 576px) {
     .portfolio__card{
         width: 300px;

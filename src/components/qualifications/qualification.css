@@ -47,11 +47,13 @@
     display: inline-block;
     font-size: var(--small-font-size);
     margin-bottom: 1.5rem;
+    color: black;
 
 }
 .qualification__calender{
     font-size: var(--small-font-size);
     padding-bottom: 1rem;
+    color: black;
 }
 .qualification__rounder{
     display: inline-block;

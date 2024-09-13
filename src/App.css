@@ -7,13 +7,14 @@
 
     /*========== Colors ==========*/
     /*Color mode HSL(hue, saturation, lightness)*/
-    --hue: 0;
-    --sat: 0%;
-    --title-color: hsl(var(--hue), var(--sat), 20%);
-    --title-color-dark: hsl(var(--hue), var(--sat), 0%);
-    --text-color: hsl(var(--hue), var(--sat), 46%);
-    --body-color: hsl(var(--hue), var(--sat), 98%);
-    --container-color: #fff;
+    --hue: 50%; /* Gold */
+    --sat: 100%; /* Full saturation for gold */
+    --title-color: #D4AF37; /* Gold */
+    --title-color-dark: #B8860B; /* Dark Golden Rod */
+    --text-color: #201010; 
+    --body-color: #F0F0F0; /* White */
+    --container-color: #2C2C2C; 
+    
 
     /*========== Font and typography ==========*/
     --body-font: "Poppins", sans-serif;
@@ -83,8 +84,8 @@
     }
 
     body {
-    background-color: var(--body-color);
-    color: var(--text-color);
+    background: #f0f0f0;
+    color: var(--body-color);
     }
 
     h1,
@@ -149,8 +150,8 @@
     /*=============== BUTTONS ===============*/
     .button {
     display: inline-block;
-    background-color: var(--title-color);
-    color: var(--container-color);
+    background-color: var(--text-color);
+    color: var(--body-color);
     padding: 1.25rem 2rem;
     border-radius: 1rem;
     font-weight: var(--font-medium);

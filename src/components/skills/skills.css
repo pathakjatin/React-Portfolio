@@ -40,6 +40,7 @@
 }
 .skill__level{
     font-size: var(--tiny-font-size);
+    color: aliceblue;
 }
     /*=============== BREAKPOINTS ===============*/
     /* For large devices */

@@ -29,7 +29,7 @@ const Qualification = () => {
 
                             <div>
                                 <h3 className="qualification__title">B.Tech in Information Technology</h3>
-                                <span className="qualification__subtitle">RAIT</span>
+                                <span className="qualification__subtitle">Ramrao Adik Institue of Technology</span>
                                 <div className="qualification__calender">
                                     <FaCalendar /> 2022-Present
                                 </div>

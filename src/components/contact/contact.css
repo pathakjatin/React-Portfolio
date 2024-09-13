@@ -35,7 +35,7 @@
     margin-bottom: var(--mb-0-75);
 }
 .contact__button{
-    color: var(--text-color);
+    color: white;
     font-size: var(--small-font-size);
     display: inline-flex;
     align-items: center;
@@ -78,6 +78,7 @@
     font-size: var(--smaller-font-size);
     padding: 0.25rem;
     background-color: var(--body-color);
+    color:var(--text-color);
     z-index: 10;
 }
 .contact__form-area{
