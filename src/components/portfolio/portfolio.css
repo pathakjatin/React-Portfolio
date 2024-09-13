@@ -1,5 +1,5 @@
 .portfolio__box{
-    width: 100%;
+    
     display: flex;
     margin: auto;
     justify-content: center;
@@ -28,15 +28,10 @@
 }
 .portfolio__card img{
     background-size: cover;
-    
     object-fit: contain;
     border-radius: 1.25rem;
     width: 310px;
     height: 310px;
-}
- #ts{
-    height: 220px;
-    width: 250px;
 }
 .portfolio__card a{
     color: var(--container-color);
