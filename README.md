@@ -1,4 +1,4 @@
-# Portfolio
+# Portfolio [Jatin Pathak](https://main--pathakjatin.netlify.app/)
 
 Welcome to my personal portfolio website built using React! This portfolio showcases my skills, qualifications, projects, and contact information. Below is an overview of the different sections of the website.
 
