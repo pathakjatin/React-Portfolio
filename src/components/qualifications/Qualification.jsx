@@ -1,8 +1,12 @@
-import React from 'react';
+import React , {useState} from 'react';
 import './qualification.css';
-import {FaGraduationCap , FaCalendar} from 'react-icons/fa';
+import {FaGraduationCap , FaBriefcase , FaCalendar} from 'react-icons/fa';
 
 const Qualification = () => {
+    const [toggleState , setToggleState] = useState(1);
+    function handleToggle(idx){
+        setToggleState(idx);
+    }
     return (
         <section className="qualification section" id="qualifications">
             <h2 className="section__title">Qualification</h2>
@@ -10,23 +14,25 @@ const Qualification = () => {
 
             <div className="qualification__container container">
                 <div className="qualification__tabs">
-                    <div className="qualification__button qualification__active button--flex">
+                    <div className="qualification__button qualification__active button--flex" onClick={() => handleToggle(1)}>
                         <FaGraduationCap />{" "} Education
+                    </div>
+                    <div className="qualification__button qualification__active button--flex" onClick={() => handleToggle(2)}>
+                        <FaBriefcase />{" "} Experience
                     </div>
 
                 </div>
 
                 <div className="qualification__sections">
-                    <div className="qualification__content qualification__content-active">
+                    <div className={toggleState === 1 ? "qualification__content qualification__content-active" : "qualification__content"}>
 
-                        <div className="qualification__data">
+                        <div className="qualification__data data1">
                             <div></div>
                             {/*college */}
                             <div>
                                 <span className="qualification__rounder"></span>
                                 <span className="qualification__line"></span>
                             </div>
-
                             <div>
                                 <h3 className="qualification__title">B.Tech in Information Technology</h3>
                                 <span className="qualification__subtitle">Ramrao Adik Institue of Technology</span>
@@ -34,7 +40,6 @@ const Qualification = () => {
                                     <FaCalendar /> 2022-Present
                                 </div>
                             </div>
-
 
                         </div>
 
@@ -57,14 +62,13 @@ const Qualification = () => {
 
                         </div>
 
-                        <div className="qualification__data">
+                        <div className="qualification__data data3">
                             <div></div>
                                 {/*school*/}
-                            <div>
+                                <div>
                                 <span className="qualification__rounder"></span>
                                 <span className="qualification__line"></span>
                             </div>
-
                             <div>
                                 <h3 className="qualification__title">School</h3>
                                 <span className="qualification__subtitle">ST.Thomas Convent High School</span>
@@ -76,6 +80,47 @@ const Qualification = () => {
 
                         </div>
                     </div>
+                    <div className={toggleState === 2 ? "qualification__content qualification__content-active" : "qualification__content"}>
+
+                        <div className="qualification__data">
+                            <div></div>
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 className="qualification__title">Frontend Developer Intern</h3>
+                                <span className="qualification__subtitle">R.V Networking , Nerul</span>
+                                <div className="qualification__calender">
+                                    <FaCalendar /> September 2024-Present
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div className="qualification__data">
+                            <div></div>
+                                
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 className="qualification__title">Technical Head</h3>
+                                <span className="qualification__subtitle">CSI RAIT</span>
+                                <div className="qualification__calender">
+                                    <FaCalendar/> August 2024 - Present
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    
                 </div>
             </div>
         </section>
