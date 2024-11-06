@@ -1,6 +1,7 @@
 import React from 'react';
 import handSvg from '../../assets/hand.svg';
 import sendSvg from '../../assets/send.svg';
+import Typewriter from 'typewriter-effect';
 
 const Data = () => {
   return (
@@ -9,7 +10,21 @@ const Data = () => {
             Jatin Pathak 
             <img src={handSvg} alt="hand-icon"></img>
         </h1>
-        <h3 className="home__subtitle">Frontend-Developer</h3>
+        <h3 className="home__subtitle">
+          <Typewriter
+            options={{
+              strings: [
+                "Frontend Developer",
+                "React Developer",
+                "UI/UX Designer",
+                "JavaScript Enthusiast",
+              ],
+              autoStart: true,
+              loop: true,
+              deleteSpeed: 50,
+            }}
+        />
+        </h3>
         <p className="home__description">
         I'm a creative frontend developer based in India, and I'm very passionate and dedicated to my work.
         </p>
