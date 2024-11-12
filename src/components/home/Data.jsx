@@ -18,6 +18,7 @@ const Data = () => {
                 "React Developer",
                 "UI/UX Designer",
                 "JavaScript Enthusiast",
+                "Data Science Enthusiast",
               ],
               autoStart: true,
               loop: true,

@@ -12,7 +12,7 @@ const Info = () => {
         <div className="about__box">
             <FaBriefcase className="about__icon"/>
             <h3 className="about__title">Completed</h3>
-                <span className="about__subtitle">5 + Projects</span>
+                <span className="about__subtitle">10 + Projects</span>
         </div>
         <div className="about__box">
             <FaHeadset className="about__icon"/>

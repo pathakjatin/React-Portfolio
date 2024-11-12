@@ -6,8 +6,16 @@ import signLangImg from '../../assets/Screenshot 2024-08-03 235904.png'
 // import spotifyImg from '../../assets/Screenshot 2024-08-04 020241.png';
 import timeOutImg from '../../assets/Screenshot 2024-09-14 000202.png'
 import creditCardImg from '../../assets/Screenshot 2024-11-06 204724.png';
+import pageturnerImg from '../../assets/Screenshot 2024-11-12 130231.png'
 
 export const project_data = [
+    {
+        image: pageturnerImg,
+        title: "PageTurner",
+        description: "A user-friendly MERN stack bookstore app where you can browse, buy, and manage a diverse selection of books across genres.",
+        githublink : "https://github.com/pathakjatin/PageTurner",
+        projectlink: "https://pageturner-psi.vercel.app/"
+    },
     {
         image : creditCardImg,
         title : "Credit Card Fraud Detection",
