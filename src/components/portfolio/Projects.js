@@ -6,9 +6,17 @@ import signLangImg from '../../assets/Screenshot 2024-08-03 235904.png'
 // import spotifyImg from '../../assets/Screenshot 2024-08-04 020241.png';
 import timeOutImg from '../../assets/Screenshot 2024-09-14 000202.png'
 import creditCardImg from '../../assets/Screenshot 2024-11-06 204724.png';
-import pageturnerImg from '../../assets/Screenshot 2024-11-12 130231.png'
+import pageturnerImg from '../../assets/Screenshot 2024-11-12 130231.png';
+import rvImg from '../../assets/Screenshot 2024-11-12 191347.png';
 
 export const project_data = [
+    {
+        image : rvImg,
+        title : "RV Networking",
+        description: "A dynamic website designed for a digital marketing company, showcasing services and engaging animations to highlight brand impact and reach.",
+        githublink:"https://github.com/pathakjatin/RV-Networking",
+        projectlink:"https://rvnetworking.com/",
+    },
     {
         image: pageturnerImg,
         title: "PageTurner",
@@ -20,8 +28,8 @@ export const project_data = [
         image : creditCardImg,
         title : "Credit Card Fraud Detection",
         description : "A machine learning model that detects fraudulent credit card transactions by analyzing transaction patterns.",
-        githublink : "#",
-        projectlink : "#",
+        githublink : "https://github.com/pathakjatin/Credit-Card-Fraud-Detection",
+        projectlink : "https://github.com/pathakjatin/Credit-Card-Fraud-Detection",
     },
     {
         image : signLangImg,
