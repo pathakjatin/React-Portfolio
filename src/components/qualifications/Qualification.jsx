@@ -89,10 +89,25 @@ const Qualification = () => {
                                 <span className="qualification__line"></span>
                             </div>
                             <div>
+                                <h3 className="qualification__title">Full stack Developer Intern</h3>
+                                <span className="qualification__subtitle">Blue Address , Powai</span>
+                                <div className="qualification__calender">
+                                    <FaCalendar /> May 2025-Present
+                                </div>
+                            </div>
+
+                        </div>
+                        <div className="qualification__data">
+                            <div></div>
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
+                            </div>
+                            <div>
                                 <h3 className="qualification__title">Frontend Developer Intern</h3>
                                 <span className="qualification__subtitle">R.V Networking , Nerul</span>
                                 <div className="qualification__calender">
-                                    <FaCalendar /> September 2024-Present
+                                    <FaCalendar /> September 2024-February 2025
                                 </div>
                             </div>
 
@@ -110,7 +125,7 @@ const Qualification = () => {
                                 <h3 className="qualification__title">Technical Head</h3>
                                 <span className="qualification__subtitle">CSI RAIT</span>
                                 <div className="qualification__calender">
-                                    <FaCalendar/> August 2024 - Present
+                                    <FaCalendar/> August 2024 - June 2025
                                 </div>
                             </div>
 
