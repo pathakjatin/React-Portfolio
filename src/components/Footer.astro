@@ -1,11 +1,12 @@
 ---
 import logoStar from '../assets/logo-star.svg'
 import { author } from '../sample'
+import {  IconBrandLinkedin, IconBrandInstagram, IconBrandLeetcode } from "@tabler/icons-react";
 
 const socials = [
-  { icon: 'ri-tiktok-fill', link: author.tiktok },
-	{ icon: 'ri-instagram-line', link: author.ig },
-  { icon: 'ri-twitter-x-line', link: author.x },
+  { icon: IconBrandLinkedin , link: author.linkedin },
+	{ icon: IconBrandInstagram , link: author.ig },
+  { icon: IconBrandLeetcode, link: author.leetcode },
 ]
 
 ---
@@ -21,9 +22,11 @@ const socials = [
         <p>© {new Date().getFullYear()} {author.nickname}. All rights reserved.</p>
       </div>
       <div class="flex md:justify-end gap-5">
-        {socials.map(item => ( 
-          <a href={item.link} target="_blank" class="transition-all duration-200 hover:translate-y-[2px]"><i class={`${item.icon} text-2xl`}></i></a>
-        ))}
+        {socials.map((item, index) => (
+        <a key={index} href={item.link} target="_blank" class="transition-all duration-200 hover:translate-y-[2px]">
+          <item.icon size={28} className="text-black" />
+        </a>
+      ))}
       </div>
     </div>
    </footer>

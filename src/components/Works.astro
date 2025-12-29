@@ -6,20 +6,34 @@ import arrowCard from '../assets/arrow-card.svg'
 
 const portfolio = [
   { 
-    name: 'Portfolio design', desc: `UI design - User research - webflow development`,
-    cover: `https://images.pexels.com/photos/1051075/pexels-photo-1051075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2`
+    name: 'Blue Address', desc: `Fullstack development - Database - SEO`,
+    cover: `https://res.cloudinary.com/dgghjmym7/image/upload/f_auto,q_auto/v1766993560/Screenshot_2025-11-07_225708_rgjbwi.png`,
+    link:`www.blueaddress.com/`
   },
   { 
-    name: 'Portfolio design', desc: `UI design - User research - webflow development`,
-    cover: `https://images.pexels.com/photos/2303781/pexels-photo-2303781.jpeg?auto=compress&cs=tinysrgb&w=1600`
+    name: 'RAIT Technovate', desc: `UI design - User research - webflow development`,
+    cover: `https://res.cloudinary.com/dgghjmym7/image/upload/f_auto,q_auto/v1766993538/Screenshot_2025-11-07_225928_wnm3vp.png`,
+    link:`https://www.raittechnovate.in/`
   },
   { 
-    name: 'Portfolio design', desc: `UI design - User research - webflow development`,
-    cover: `https://images.pexels.com/photos/441963/pexels-photo-441963.jpeg?auto=compress&cs=tinysrgb&w=1600`
+    name: 'RV Networking', desc: `UI design - User research - Frontend development`,
+    cover: `https://res.cloudinary.com/dgghjmym7/image/upload/f_auto,q_auto/v1766993534/Screenshot_2025-11-07_225816_t2ti4b.png`,
+    link:`https://rvnetworking.com/`
   },
   { 
-    name: 'Portfolio design', desc: `UI design - User research - webflow development`,
-    cover: `https://images.pexels.com/photos/245240/pexels-photo-245240.jpeg?auto=compress&cs=tinysrgb&w=1600`
+    name: 'Page Turner', desc: `Frontend development - Backend development - UI Design`,
+    cover: `https://res.cloudinary.com/dgghjmym7/image/upload/f_auto,q_auto/v1766993535/Screenshot_2025-11-07_225954_fobbvi.png`,
+    link:`https://pageturner-psi.vercel.app/`
+  },
+  { 
+    name: 'To-Do list', desc: `Frontend development - UI Design`,
+    cover: `https://res.cloudinary.com/dgghjmym7/image/upload/f_auto,q_auto/v1766993824/Screenshot_2025-12-29_130643_lmqqn3.png`,
+    link:`https://pathakjatin.github.io/todo-list/`
+  },
+  { 
+    name: 'Time Runs Out', desc: `Frontend development - UI Design - Game`,
+    cover: `https://res.cloudinary.com/dgghjmym7/image/upload/f_auto,q_auto/v1766993538/Screenshot_2025-11-07_230022_m1ojv5.png`,
+    link:`https://timerunsout.netlify.app/`
   },
 ]
 ---
@@ -31,9 +45,9 @@ const portfolio = [
       <img src={svgUnderline.src} alt="arrow" width="140" class="absolute left-50 -bottom-1" />
     </div>
   
-    <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10"> 
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10"> 
       {portfolio.map(item => ( 
-        <a href="#" class="flex flex-col bg-white p-5 group relative transition-all duration-200 hover:shadow-[4px_4px_0px_rgba(0,0,0,0.3)]">
+        <a href={item.link} class="flex flex-col bg-white p-5 group relative transition-all duration-200 hover:shadow-[4px_4px_0px_rgba(0,0,0,0.3)]">
           <div class="w-full h-[200px] overflow-hidden border-2">
            <img src={item.cover} alt="" class="w-full h-full object-cover" />
           </div>

@@ -3,50 +3,41 @@ import svgNew from '../assets/new.svg'
 
 const testimonials = [
   { 
-    comment: `“Design is a bridge that connects everyone and everything”`,
+    comment: `“It has been an absolute pleasure working with Jatin Pathak, the Technical Head at CSI-RAIT. His dedication to fostering technical growth within the community is truly commendable. Jatin has successfully conducted numerous technical workshops that were not only informative but also highly engaging and well-structured. His leadership and initiative have significantly enhanced the technical landscape at CSI-RAIT, inspiring many students to explore and excel in various domains of technology.”`,
     author: {
-      name: `Client Name`,
-      pos: `Project Manager, Company Name`,
+      name: `Riddhi Bhanushali`,
+      pos: `President, CSI-RAIT, 2025`,
       pic: `https://images.pexels.com/photos/2709386/pexels-photo-2709386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2`
     },
     cls: `rotate-2 -translate-y-10`
    },
    { 
-    comment: `“Design is a bridge that connects everyone and everything”`,
+    comment: `“Under Jatin’s leadership, the technical team achieved what no one expected—they earned the 'Best Domain' tag, surpassing even the design team that held the title for two consecutive years. Jatin brought not only technical expertise but also a strategic mindset, consistently offering impactful suggestions on how to improve the committee’s overall functioning. His ideas extended beyond code, influencing how we operated as a team. With just a bit more confidence in presenting his vision, he’s destined to be an exceptional leader. Wishing him continued success!”`,
     author: {
-      name: `Client Name`,
-      pos: `Project Manager, Company Name`,
+      name: `Shreyash Dekhane`,
+      pos: `Vice President, CSI-RAIT, 2024`,
       pic: `https://images.pexels.com/photos/2128819/pexels-photo-2128819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2`
     },
     cls: `-rotate-2 -translate-x-10  z-5`
    },
    { 
-    comment: `“Design is a bridge that connects everyone and everything”`,
+    comment: `“It has been a wonderful experience working with Jatin Pathak, who served as the Technical Head at CSI-RAIT. His commitment to promoting a culture of learning and innovation stood out consistently throughout his tenure. Jatin took the lead in organizing multiple impactful technical initiatives and workshops that were not only educational but also engaging and thoughtfully executed. His proactive approach and leadership have played a key role in motivating students to dive deeper into various technical domains and pursue excellence.”`,
     author: {
-      name: `Client Name`,
-      pos: `Project Manager, Company Name`,
+      name: `Kevin Lalai`,
+      pos: `Joint Event Organizer, CSI-RAIT, 2024`,
       pic: `https://images.pexels.com/photos/2169429/pexels-photo-2169429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2`
     },
     cls: `rotate-2 translate-x-5 z-5`
-   },
-   { 
-    comment: `“Design is a bridge that connects everyone and everything”`,
-    author: {
-      name: `Client Name`,
-      pos: `Project Manager, Company Name`,
-      pic: `https://images.pexels.com/photos/3586798/pexels-photo-3586798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2`
-    },
-    cls: `-rotate-2 translate-y-10 md:translate-y-15`
    },
 ]
 ---
 
 
 <section>
-    <div class="max-w-4xl mx-auto pb-20 px-10 overflow-hidden">
+    <div class="max-w-6xl mx-auto pb-20 px-10 overflow-hidden" id="reviews">
       <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="flex relative">
-          <h1 class="text-3xl">Here’s what my clients are saying about my work</h1>
+          <h1 class="text-3xl">Here's what my clients are saying about my work</h1>
           <img src={svgNew.src} alt="arrow" width="40" class="absolute -right-3 md:-right-10 bottom-0" />
         </div>
       </div>
@@ -54,8 +45,8 @@ const testimonials = [
   
       <div class="grid grid-cols-1 md:grid-cols-2 py-30">
         {testimonials.map(item => ( 
-          <div class={`flex flex-col gap-3 p-5 pr-15 bg-white border-2 shadow-[6px_6px_0px_rgba(0,0,0,0.3)] ${item.cls}`}>
-            <p>{item.comment}</p>
+          <div class={`w-[450px] flex flex-col gap-6 p-5 pr-8 bg-white border-2 shadow-[6px_6px_0px_rgba(0,0,0,0.3)] ${item.cls}`}>
+            <p class="text-sm">{item.comment}</p>
             <div class="flex items-center gap-2">
               <div><div class="size-11 rounded-full border overflow-hidden">
                   <img src={item.author.pic} alt="" class="w-full h-full object-cover" />

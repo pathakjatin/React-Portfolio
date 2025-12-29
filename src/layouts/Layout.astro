@@ -1,23 +1,53 @@
+---
+import { SmoothCursor } from "@/components/ui/smooth-cursor";
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Angie Portfolio</title>
+		<link rel="stylesheet" href="../styles/global.css">
+		<title>Jatin's Portfolio</title>
 	</head>
 	<body>
+		<div id="scroll-progress" class="fixed top-0 left-0 h-1 bg-yellow z-50 w-0"></div>
+		<SmoothCursor client:load/>
 		<slot />
 	</body>
+	<script>
+		import Lenis from 'lenis';
+		  const lenis = new Lenis({
+			duration: 1.2, // animation duration
+			easing: t => t, // easing function
+			smooth: true,
+			direction: 'vertical',
+			gestureDirection: 'vertical',
+		});
+
+		function raf(time) {
+			lenis.raf(time);
+			requestAnimationFrame(raf);
+		}
+
+		requestAnimationFrame(raf);
+		const scrollBar = document.getElementById('scroll-progress');
+
+		lenis.on('scroll', ({ scroll, limit }) => {
+			const progress = (scroll / limit) * 100; // 0-100%
+			scrollBar.style.width = `${progress}%`;
+		});
+	</script>
 </html>
 
 <style>
 
 :root{
-	--main-bg: #FEFFF0;
-	--blue: #BAE6FF;
-	--yellow: #FFDC58;
+	--main-bg: #fff7ed;
+	--blue: #67e8f9;
+	--yellow: #fbbf24;
 }
 
 html,
