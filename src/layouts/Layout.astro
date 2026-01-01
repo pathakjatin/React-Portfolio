@@ -19,12 +19,14 @@ import { SmoothCursor } from "@/components/ui/smooth-cursor";
 	</body>
 	<script>
 		import Lenis from 'lenis';
-		  const lenis = new Lenis({
-			duration: 1.2, // animation duration
-			easing: t => t, // easing function
-			smooth: true,
-			direction: 'vertical',
-			gestureDirection: 'vertical',
+		  
+		const lenis = new Lenis({
+		duration: 0.9,          
+		easing: (t) => 1 - Math.pow(1 - t, 3), // easeOutCubic
+		smooth: true,
+		direction: 'vertical',
+		gestureDirection: 'vertical',
+		smoothTouch: false,     
 		});
 
 		function raf(time) {

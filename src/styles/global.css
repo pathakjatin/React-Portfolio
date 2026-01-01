@@ -13,6 +13,17 @@ textarea,
 select {
   cursor: text !important;
 }
+img, svg {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE/Edge */
+  user-select: none;
+
+  -webkit-user-drag: none;   /* Safari / Chrome */
+  user-drag: none;
+
+  pointer-events: none;      /* blocks right-click & drag */
+}
 
 @custom-variant dark (&:is(.dark *));
 
